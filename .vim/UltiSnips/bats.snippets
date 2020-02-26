@@ -1,0 +1,17 @@
+snippet #! "#!/usr/bin/env bats"
+#!/usr/bin/env bats
+endsnippet
+
+snippet @test "@test 'case' { ... } "
+@test "${1:test case}" {
+  ${0}
+}
+endsnippet
+
+snippet bats:status "[ '\$status' -eq 1 ]"
+[ "$status" -eq 1 ]
+endsnippet
+
+snippet bats:output "[ '\$output' = 'output message' ]"
+[ "$output" = "${1:output message}" ]
+endsnippet

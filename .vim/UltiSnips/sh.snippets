@@ -1,0 +1,19 @@
+snippet #! "#!/usr/bin/env bash"
+#!/usr/bin/env bash
+endsnippet
+
+snippet if[] "if [ condition ]; then command; fi"
+if [ ${1: condition} ]
+then
+  ${0: commands}
+fi
+endsnippet
+
+snippet if[str] "if [ condition ]; then command; fi"
+if [ "${1: variable}" == "${2: string}" ]
+then
+  ${0: commands}
+fi
+endsnippet
+
+

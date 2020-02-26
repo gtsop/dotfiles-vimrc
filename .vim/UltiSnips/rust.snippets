@@ -1,0 +1,27 @@
+snippet prln "println!('some text\');"
+println!("${1:some text}");
+endsnippet
+
+snippet format "format!['string', params]"
+format!("${1:\{\}}", ${0:params});
+endsnippet
+
+snippet vec "vec![elements]"
+vec![${1:elements}]
+endsnippet
+
+
+snippet  panic "panic!('error message')"
+panic!("${1:error message}");
+endsnippet
+
+snippet if "if condition { statements }"
+if ${0:true} {
+}
+endsnippet
+
+snippet match "match expression { arms  }"
+match ${0:expression} {
+  arms
+}
+endsnippet
