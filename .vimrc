@@ -4,8 +4,7 @@ set nocp
 syntax on
 set noswapfile
 
-let mapleader = "-"
-let maplocalleader = "-"
+let mapleader = " "
 map <SPACE> <leader>
 
 " Move this to some short of utils file

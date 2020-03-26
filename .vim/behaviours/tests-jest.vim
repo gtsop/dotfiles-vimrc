@@ -8,8 +8,6 @@ iabbrev jestrenders it('renders', function () {
 \<cr>const tree = renderer.create().toJSON()
 \<cr>expect(tree).toMatchSnapshot()<cr>})<Up><Up><right><right><right><right><right><right><right><right><right><right>
 
-iabbrev skatanafas skataremalaka
-
 iabbrev jestcontainer let container = null;
 \<cr>beforeEach(() => {
 \<cr>container = document.createElement("div");

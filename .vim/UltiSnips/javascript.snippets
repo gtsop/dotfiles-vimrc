@@ -3,3 +3,34 @@ it("${1:description}", function () {
   ${0:statements}
 });
 endsnippet
+
+snippet reactcomponent "import react; export default ..."
+import React from "react";
+
+export default function ${1:Component name}() {
+  return ${0:<></>};
+}
+endsnippet
+
+snippet jest:lint "/* global describe, it expect */"
+/* global describe, it, expect */
+endsnippet
+
+snippet jest:desc "describe('test suite', function () { ... })"
+describe('${1:test suit}', function () {
+  ${0:statements}
+});
+endsnippet
+
+snippet jest:it "it('test case', function () { ... })"
+it('${1:test case}', function () {
+  ${0:statements}
+});
+endsnippet
+
+snippet jest:renders "react component rendering test"
+it('renders', function () {
+  const tree = renderer.create().toJSON()
+  expect(tree).toMatchSnapshot()
+})
+endsnippet
